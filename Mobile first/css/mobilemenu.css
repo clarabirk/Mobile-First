@@ -1,0 +1,217 @@
+/* [ON MOBILE DEVICES] */
+
+.navigation__container {
+    /*background: #000000;*/
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    padding-bottom: 10px;
+    z-index: 9999;
+    
+}
+
+.mobileiconlabel {
+    display: inline-block;
+    margin-top: 20px;
+    color: #006837;
+    /*color: #ffffff;*/
+    /*background: #a02620;*/
+    font-style: normal;
+    font-size: 1.2rem;
+    padding: 10px 5px;
+}
+
+.menuitem {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    color: #006837;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.active_menuitem{
+    color: #006837;
+    border: solid 2px #006837;
+    border-radius: 5px;
+    font-family:
+}
+
+
+.cta_style{
+    background-color: rgb(102, 153, 204, 0.6);
+    color: white;
+    border-radius: 10px;
+}
+
+/* Hide checkbox and menuitems until clicked */
+.menuitems__container,
+.mobileicon {
+    display: none;
+}
+
+/* Show menuitems when mobileicon-label is clicked */
+.navigation__container input:checked ~ .menuitems__container{
+    display: block;
+    margin-right: 0px;
+}
+
+
+/* Display company logo to the right */
+.companylogo {
+    position: absolute;
+    width: 200px;
+    margin-left: 80px;
+}
+
+.menuitems__container{
+    margin-right: 100px;
+}
+
+@media only screen and (min-width: 700px) {
+
+    .navigation__container {
+    /*background: #000000;*/
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding-bottom: 45px;
+    border-bottom: 1px solid rgba(34, 56, 178, 0.21);
+    z-index: 9999;  
+}
+
+.mobileiconlabel {
+    display: inline-block;
+    margin-top: 20px;
+    /*color: #ffffff;*/
+    /*background: #a02620;*/
+    font-style: normal;
+    font-size: 1.2rem;
+    padding: 10px 5px;
+}
+
+.menuitem {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-right: 10px;
+    /*color: white;*/
+    color: #006837;
+    text-decoration: none;
+    text-align: center;
+}
+
+.active_menuitem{
+    color: #006837;
+    border: solid 2px #006837;
+    border-radius: 5px;
+    font-family:
+}
+
+
+.cta_style{
+    background-color: rgb(102, 153, 204, 0.6);
+    color: white;
+    border-radius: 10px;
+}
+
+/* Hide checkbox and menuitems until clicked */
+.menuitems__container,
+.mobileicon {
+    display: none;
+}
+
+/* Show menuitems when mobileicon-label is clicked */
+.navigation__container input:checked ~ .menuitems__container{
+    display: block;
+}
+
+/* Display company logo to the right */
+.companylogo {
+    position: absolute;
+    right: 30px;
+    width: 300px;
+    margin-left: 100px;
+}
+
+.menuitems__container{
+    margin-right: 60px;
+}
+}
+
+/* Add rules [ON WIDE SCREENS] */
+
+@media only screen and (min-width: 900px) {
+
+    /* Hide Mobile icon and its label */
+    .mobileiconlabel,
+    .mobileicon {
+        display: none;
+    }
+
+    
+    /* Make menuitems flex horisontally (on a row) */
+    .menuitems__container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-bottom: 1px;
+      }
+
+    .menuitem {
+        width: 180px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        font-family: 'Alegreya Sans SC', sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+
+    .menuitem:hover {
+        background-color: #006837;
+    color: white;
+    border-radius: 5px;
+    }
+    
+    .celle1:hover{
+        box-shadow: 1px 1px 20px 1px #333333;
+    }
+    .celle2:hover{
+        box-shadow: 1px 1px 20px 1px #333333;
+    }
+    .celle3:hover{
+        box-shadow: 1px 1px 20px 1px #333333;
+    }
+    
+    .guide_link2:hover{
+        box-shadow: 1px 1px 8px 1px #333333;
+        border: none;   
+    }
+    
+    .tilmeld:hover{
+        transform: scale(1.2);
+    }
+    
+    /* Display company logo to the left */
+    
+      .companylogo {
+        width: 300px;
+        left: 10px;
+        margin-top: -100px;
+        margin-left: 40px;
+        font-size: 50px;
+        
+    }
+
+    .navigation__container{
+        padding-bottom: 10px;
+        margin-right: -85;
+    }
+    
+    .search_form{
+        margin-right: 150px;
+    }
+
+}

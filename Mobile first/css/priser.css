@@ -1,0 +1,351 @@
+/* Basic CSS reset */
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+.page__body {
+    font-family: 'Coming Soon', cursive;
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.heading1 {
+    color: #006837;
+    margin-left: 6px;
+    font-size: 25px; 
+}
+
+.logo_style {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.5rem;
+    color: #333333;
+    text-decoration: none;
+}
+
+.tekst {
+    margin-top: 10px;
+    margin-left: 6px;
+    margin-bottom: 10px;
+}
+
+.heading3 {
+    color: #006837;
+}
+
+.tekst1 {
+    margin-bottom: 20px;
+    margin-left: 6px;
+    margin-top: 20px;
+}
+
+.pris {
+    margin-top: -10px;
+    border: 3px solid #006837;
+    border-radius: 20px;
+    padding-top: -60px;
+    margin-left: 6px;
+    margin-right: 12px;
+}
+
+.pris1 {
+    margin-top: -40px;
+    margin-bottom: 10px;
+    margin-left: 6px;
+}
+
+.grid-container {
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    text-align: center;
+    grid-template-areas: 20px;
+    grid-template-columns: 220px 220px 220px;
+    grid-template-rows: 200px;
+    grid-gap: 20px 20px;
+    grid-template-areas:
+        "celle1 celle2 celle3"
+        ". . ."
+        ". . .";  
+}
+
+.celle1 {
+    grid-area: celle1;
+    background-color: #006837;
+    margin: 25px;
+    border-radius: 50%;
+    width: 300px;
+    text-align: center;
+    padding: 1px;
+    margin-top: 5px;
+    height: 300px;
+    color: white;
+    margin-left: 4px;
+}
+
+.celle2 {
+    grid-area: celle2;
+    background-color: #006837;
+    padding-bottom: 15px;
+    margin: 25px;
+    border-radius: 50%;
+    width: 300px;
+    text-align: center;
+    padding: 1px;
+    margin-top: 5px;
+    height: 300px;
+    color: white;
+    margin-left: 4px;
+}
+
+.celle3 {
+    grid-area: celle3;
+    background-color: #006837;
+    margin-bottom: 10px;
+    margin: 25px;
+    padding-bottom: 15px;
+    border-radius: 50%;
+    width: 300px;
+    text-align: center;
+    padding: 1px;
+    margin-top: 5px;
+    height: 300px;
+    color: white;
+    margin-left: 4px;
+}
+
+.text1 {
+    margin-top: 40px;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.text2 {
+    margin-top: 40px;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+.text3 {
+    margin-top: 40px;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+/*------ Footer section-----*/
+
+.page_footer {
+    color: #006837;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    border-top: 1px solid #006837;
+    padding-top: 20px;
+}
+
+.some_image {
+    width: 55px;
+    text-align: center;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -15px;
+}
+
+.footer_card_heading {
+    margin-bottom: 5px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.adress {
+    font-size: 12px;
+}
+
+.footer_card:first-child .footer_card_heading {
+    margin-bottom: 5px;
+}
+
+.footer_link {
+    text-decoration: none;
+    color: #006837;
+}
+
+.footer_card2 {
+    display: none;
+}
+
+@media only screen and (min-width:900px) {
+    
+     .companylogo {
+        margin-left: 150px;
+    }
+
+    .mobile_search_form {
+        display: none;
+    }
+    
+    .heading1 {
+    color: #006837;
+    margin-left: 60px;
+    margin-top: 15px;
+            
+    }
+    
+    .heading3 {
+        color: #006837;
+        margin-top: -12px;
+    }
+    
+    .tekst {
+        margin-left: 60px;
+    }
+    
+    .tekst1 {
+        float: right;
+        margin-right: 100px;
+        width: 50%;
+        margin-top: -260px;
+    }
+    
+    .text {
+    font-size: 18px;
+    margin-left: 100px; 
+    }
+    
+    .pris {
+        border: 5px solid #006837;
+        float: right;
+        width: 50%;
+        margin-right: 280px;
+        margin-top: -100px;
+        margin-left: -100px;
+        padding-bottom: 10px;
+        width: 400px;
+        height: 90px;
+        border-radius: 20px;
+        color: #006837;
+    }
+    
+    .pris1 {
+        margin-top: -17px;
+        margin-left: 10px;
+    }
+    
+  .grid-container {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%;
+        height: 50px;
+        max-width: 76rem;
+        margin-top: 270px;
+        margin-bottom: 150px;
+      margin-left: 40px;
+}
+
+   .celle1 {
+        background-color: white;
+        margin-bottom: 80px;
+        grid-area: celle1;
+        text-align: center;
+        border: 1px solid black;
+        background-color: #006837;
+        color: white;
+        margin-left: 30px;
+        margin-right: 80px;
+        border-radius: 20px;
+    margin-top: -200px;
+    }
+
+    .celle2 {
+        background-color: white;
+        margin-bottom: 80px;
+        grid-area: celle2;
+        text-align: center;
+        border: 1px solid black;
+        background-color: #006837;
+        color: white;
+        margin-left: 30px;
+        margin-right: 80px;
+        border-radius: 20px;
+        margin-top: -200px;
+    }
+
+    .celle3 {
+        background-color: white;
+        margin-bottom: 80px;
+        grid-area: celle3;
+        text-align: center;
+        border: 1px solid black;
+        background-color: #006837;
+        color: white;
+        margin-left: 30px;
+        margin-right: 80px;
+        border-radius: 20px;
+        margin-top: -200px; 
+    }
+
+    .text1 {
+        margin-top: 30px;
+    }
+    
+    .text2 {
+        margin-top: 30px;
+    }
+    
+    .text3 {
+        margin-top: 30px;
+    }
+    
+    /* ----- Page footer ----- */
+
+    .page_footer {
+        clear: both;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        height: 10rem;
+        padding-top: 20px;  
+    }
+
+    .footer_card_heading {
+        font-size: 17px;    
+    }
+    
+    .adress{
+     font-size: 16px; 
+    }
+
+    .footer_card2 {
+        display: block;
+    }
+    
+    .footer_link{
+        font-size: 16px;
+    }
+
+    .some_image {
+        width: 80px;
+        margin: -10px;
+    }
+
+    .footer_card {
+        width: 13rem;
+    }
+}
+

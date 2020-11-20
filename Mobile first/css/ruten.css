@@ -1,0 +1,323 @@
+/* Basic CSS reset */
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+.page__body {
+    font-family: 'Coming Soon', cursive;
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+
+
+/*------ Header and navigation -----*/
+
+.logo_style {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.5rem;
+    color: #333333;
+    text-decoration: none;
+}
+
+/*------ Mobile first style and layout-----*/
+
+
+.image1{
+    width: 100%;
+}
+
+.kort{
+    width: 100%;
+    margin-left: -15px;
+}
+.article_image{
+    display: none;
+    
+}
+
+.article_image2{
+    display: none;
+}
+
+.article_heading{
+    margin-bottom: 15px;
+}
+
+.article_text{
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    padding: 5px;
+}
+
+.article_text2{
+    font-size: 0.9rem;
+    line-height: 1.4rem;
+    padding: 5px;
+}
+
+.lilleoverskrift2{
+    color: #006837;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.lilleoverskrift{
+    color: #006837;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.guide_link2{
+        font-size: 15px;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        text-decoration: none;
+        margin-top: 10px;
+        background-color: #006837;
+        border-radius: 10px;
+        padding: 8px;
+        color: white; 
+    }
+
+.overskrift{
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.cirkel {
+        border: 1px solid #006837;
+        padding: 5px;
+        color: #006837;
+        }
+
+/*------ Footer section-----*/
+
+.page_footer {
+    color: #006837;
+    display: flex;
+    flex-direction: row;
+    margin-top: 35px;
+    justify-content: space-around;
+    text-align: center;
+    border-top: 1px solid #006837;
+    padding-top: 20px;
+}
+
+.some_image {
+    width: 55px;
+    text-align: center;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -15px;
+}
+
+.footer_card_heading {
+    margin-bottom: 5px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.adress {
+    font-size: 12px;
+}
+
+.footer_card:first-child .footer_card_heading {
+    margin-bottom: 5px;
+}
+
+.footer_link {
+    text-decoration: none;
+    color: #006837;
+}
+
+.footer_card2 {
+    display: none;
+}
+
+@media only screen and (min-width:700px){
+    
+    .article_image2{
+    display: block;
+    float: left;
+    align-content: center;
+    margin-left: 50px;
+    width: 380px;
+        height: 650px;
+}
+    
+    .image1{
+    display: none;
+}
+}
+
+@media only screen and (min-width:900px) {
+
+    .companylogo {
+        margin-left: 150px;
+    }
+
+    .kort{
+        display: none;
+    }
+
+    .overskrifttekst{
+        margin: 20px 100px 0 100px;
+    }
+    
+    .guide_link2{
+        font-size: 15px;
+        color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-decoration: none;
+        margin-top: 40px;
+        background-color: #006837;
+        border-radius: 20px;
+        padding: 8px;
+        color: white;
+        
+    }
+    
+    .image1{
+    display: none;
+}
+
+.article_image{
+    display: block;
+    float: left;
+    align-content: center;
+    margin-top: -65px;
+    margin-left: 100px;
+    width: 500px;
+}
+    
+    .article_image2{
+    display: block;
+    float: left;
+    align-content: center;
+    margin-left: -40px;
+    width: 600px;
+    height: 900px;
+}
+    
+    .article_inner_detail{
+        display: flex;
+        flex-direction: row;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 30px;
+    }
+    
+    
+    .article_text{
+        font-size: 1rem;
+        line-height: 1.8rem;
+        border: 1px solid #006837;
+        padding: 10px;
+        margin-left: -40px;
+    }
+    
+    .article_text2{
+        font-size: 1rem;
+        line-height: 1.8rem;
+        margin-left: 50px;
+        border: 1px solid #006837;
+        padding: 10px;
+    }
+    
+    .article_inner_detail2{
+        display: flex;
+        flex-direction: row;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 30px;
+    }
+    
+    .lilleoverskrift{
+        font-weight: bolder;
+        font-size: 22px;
+        color: #006837;
+        margin-bottom: 10px;
+    }
+    .lilleoverskrift2{
+        margin-left: 55px;
+        margin-top: 35px;
+        margin-bottom: -25px;
+        font-size: 30px;
+        font-weight: bolder;
+        color: #006837;
+    }
+    
+    .overskrift{
+        font-size: 1.3rem;
+        color: white;
+    }
+    
+    .list_text{
+        font-size: 1.1rem;
+        line-height: 3rem;
+        color: white;
+    }
+    
+    .flex_list{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cirkel{
+        border: 1px solid #006837;
+        padding: 5px;
+        color: #006837;
+        }
+    
+    
+    /* ----- Page footer ----- */
+
+    .page_footer {
+        clear: both;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        height: 10rem;
+    }
+
+
+    .footer_card_heading {
+        font-size: 17px;
+            
+    }
+    
+    .adress{
+     font-size: 16px; 
+    }
+
+    .footer_card2 {
+        display: block;
+    }
+    
+    .footer_link{
+        font-size: 16px;
+    }
+
+    .some_image {
+        width: 80px;
+        margin: -10px;
+    }
+
+    .footer_card {
+        width: 13rem;
+    }
+}

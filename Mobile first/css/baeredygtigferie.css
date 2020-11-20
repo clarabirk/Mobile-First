@@ -1,0 +1,188 @@
+/* Basic CSS reset */
+*,
+:after,
+:before {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+.page__body {
+    font-family: 'Coming Soon', cursive;
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+
+/*------ Mobile first style and layout-----*/
+
+
+/*------ Header and navigation -----*/
+
+.logo_style {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.5rem;
+    color: #333333;
+    text-decoration: none;
+}
+
+.images_section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px auto;
+    width: 100%;
+    margin-left: 0px;
+}
+
+.section__heading {
+    color: #006837; 
+    margin-left: 0px;
+}
+
+.image_inner_flexbox {
+    display: row;
+}
+
+.billede {
+    text-align: center;
+    padding: 1px;
+    width: 100%;
+    margin-top: 5px;
+    margin-right: 50px;
+}
+
+
+/*------ Footer section-----*/
+
+.page_footer {
+    color: #006837;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+    border-top: 1px solid #006837;
+    padding-top: 20px;
+}
+
+.some_image {
+    width: 55px;
+    text-align: center;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -15px;
+}
+
+.footer_card_heading {
+    margin-bottom: 5px;
+    font-size: 13px;
+    text-align: center;
+}
+
+.adress {
+    font-size: 12px;
+}
+
+.footer_card:first-child .footer_card_heading {
+    margin-bottom: 5px;
+}
+
+.footer_link {
+    text-decoration: none;
+    color: #006837;
+}
+
+.footer_card2 {
+    display: none;
+}
+
+@media only screen and (min-width:900px) {
+
+    .companylogo {
+        margin-left: 150px;
+    }
+
+
+    .mobile_search_form {
+        display: none;
+    }
+
+    .images_section {
+        max-width: 100%;
+        display:block;
+        padding: 10px auto;
+        width: 100%;
+    }
+    
+    .section__heading {
+        color: #006837;
+        max-width: 200px; 
+        margin-top: 20px; 
+    margin-left: 120px; 
+    }
+
+
+    .image_inner_flexbox {
+        display: flex; 
+    }
+
+    .billede {
+        margin-top: 0px;
+        width: 300px;
+        height: 520px; 
+        padding: 10px;
+    }
+    
+    .image_text {
+    margin-left: 120px;
+        margin-right: 90px; 
+        max-width: 470px; 
+        margin-top: 20px; 
+        margin-bottom: 50px; 
+    }
+
+    /* ----- Page footer ----- */
+
+    .page_footer {
+        clear: both;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        height: 10rem;
+    }
+
+
+    .footer_card_heading {
+        font-size: 17px;
+            
+    }
+    
+    .adress{
+     font-size: 16px; 
+    }
+
+    .footer_card2 {
+        display: block;
+    }
+    
+    .footer_link{
+        font-size: 16px;
+    }
+
+    .some_image {
+        width: 80px;
+        margin: -10px;
+    }
+
+    .footer_card {
+        width: 13rem;
+    }
+}
+
